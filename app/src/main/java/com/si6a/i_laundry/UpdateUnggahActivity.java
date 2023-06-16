@@ -15,7 +15,7 @@ import retrofit2.Response;
 
 public class UpdateUnggahActivity extends AppCompatActivity {
     private ActivityUpdateUnggahBinding binding;
-    private com.si6a.post.Unggah unggah;
+    private com.si6a.i_laundry.Unggah unggah;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
