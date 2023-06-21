@@ -37,8 +37,6 @@ public class UnggahViewAdapter extends RecyclerView.Adapter<UnggahViewAdapter.Vi
         int pos = holder.getAdapterPosition();
         com.si6a.i_laundry.Unggah unggah = data.get(pos);
         holder.itemUnggahBinding.tvName.setText(unggah.getUsername());
-        holder.itemUnggahBinding.tvPhone.setText(unggah.getContent());
-        holder.itemUnggahBinding.tvBarang.setText(unggah.getCreated_date());
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {

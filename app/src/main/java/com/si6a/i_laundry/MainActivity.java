@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                             String id = unggah.getId();
                             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                             builder.setTitle("Konfirmasi");
-                            builder.setMessage("Yakin ingin menghapus unggah '" + data.get(position).getContent() + "' ?");
+                            builder.setMessage("Yakin ingin menghapus unggah '" + data.get(position).getNama() + "' ?");
                             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {

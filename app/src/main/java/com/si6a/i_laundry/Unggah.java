@@ -5,7 +5,11 @@ import android.os.Parcelable;
 
 public class Unggah implements Parcelable {
     private String id;
-    private String content;
+    private String nama;
+    private String nomor_hp;
+    private String jenis_barang;
+    private String jumlah_barang;
+    private String harga;
     private String user_id;
     private String created_date;
     private String modified_date;
@@ -13,7 +17,11 @@ public class Unggah implements Parcelable {
 
     protected Unggah(Parcel in) {
         id = in.readString();
-        content = in.readString();
+        nama = in.readString();
+        nomor_hp = in.readString();
+        jenis_barang = in.readString();
+        jumlah_barang = in.readString();
+        harga = in.readString();
         user_id = in.readString();
         created_date = in.readString();
         modified_date = in.readString();
@@ -23,7 +31,11 @@ public class Unggah implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(id);
-        dest.writeString(content);
+        dest.writeString(nama);
+        dest.writeString(nomor_hp);
+        dest.writeString(jenis_barang);
+        dest.writeString(jumlah_barang);
+        dest.writeString(harga);
         dest.writeString(user_id);
         dest.writeString(created_date);
         dest.writeString(modified_date);
@@ -55,12 +67,44 @@ public class Unggah implements Parcelable {
         this.id = id;
     }
 
-    public String getContent() {
-        return content;
+    public String getNama() {
+        return nama;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNomor_hp() {
+        return nomor_hp;
+    }
+
+    public void setNomor_hp(String nomor_hp) {
+        this.nomor_hp = nomor_hp;
+    }
+
+    public String getJenis_barang() {
+        return jenis_barang;
+    }
+
+    public void setJenis_barang(String jenis_barang) {
+        this.jenis_barang = jenis_barang;
+    }
+
+    public String getJumlah_barang() {
+        return jumlah_barang;
+    }
+
+    public void setJumlah_barang(String jumlah_barang) {
+        this.jumlah_barang = jumlah_barang;
+    }
+
+    public String getHarga() {
+        return harga;
+    }
+
+    public void setHarga(String harga) {
+        this.harga = harga;
     }
 
     public String getUser_id() {
