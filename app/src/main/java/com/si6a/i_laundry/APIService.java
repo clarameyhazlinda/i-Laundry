@@ -27,7 +27,11 @@ public interface APIService {
 
     @FormUrlEncoded
     @POST("post")
-    Call<ValueNoData> addUnggah(@Field("content") String content,
+    Call<ValueNoData> addUnggah(@Field("nama") String nama,
+                                @Field("nomor_hp") String nomor_hp,
+                                @Field("jenis_barang") String jenis_barang,
+                                @Field("jumlah_barang") String jumlah_barang,
+                                @Field("harga") String harga,
                                 @Field("user_id") String userId);
 
     @FormUrlEncoded

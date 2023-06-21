@@ -27,7 +27,7 @@ public class UpdateUnggahActivity extends AppCompatActivity {
         unggah = getIntent().getParcelableExtra("EXTRA_DATA");
         String id = unggah.getId();
 
-        binding.etContent.setText(unggah.getContent());
+        binding.etContent.setText(unggah.getNama());
         binding.btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         binding.fabInput.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddUnggahActivity.class);
+                Intent intent = new Intent(MainActivity.this, InputActivity.class);
                 startActivity(intent);
             }
         });

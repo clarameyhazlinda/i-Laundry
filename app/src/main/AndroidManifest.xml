@@ -22,9 +22,6 @@
             android:name=".SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".AddUnggahActivity"
-            android:exported="false" />
-        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
