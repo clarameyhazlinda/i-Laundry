@@ -26,32 +26,32 @@
             android:layout_marginEnd="8dp"
             tools:text="Nama Lengkap"/>
 
-        <TextView
-            android:id="@+id/tv_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:textSize="14sp"
-            android:layout_below="@id/tv_name"
-            tools:text="Nomor Handphone"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_phone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_below="@id/tv_name"-->
+<!--            tools:text="Nomor Handphone"/>-->
 
-        <TextView
-            android:id="@+id/tv_barang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:textSize="14sp"
-            android:layout_below="@id/tv_phone"
-            tools:text="Jenis Barang"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_barang"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_below="@id/tv_phone"-->
+<!--            tools:text="Jenis Barang"/>-->
 
-        <TextView
-            android:id="@+id/tv_jumlah"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:textSize="14sp"
-            android:layout_below="@id/tv_barang"
-            tools:text="Jumlah Barang"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_jumlah"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_below="@id/tv_barang"-->
+<!--            tools:text="Jumlah Barang"/>-->
 
 <!--        <TextView-->
 <!--            android:id="@+id/tv_berat"-->
@@ -89,14 +89,16 @@
 <!--            android:layout_below="@id/tv_masuk"-->
 <!--            tools:text="Tanggal Selesai"/>-->
 
-        <TextView
-            android:id="@+id/tv_harga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:textSize="14sp"
-            android:layout_below="@id/tv_jumlah"
-            tools:text="Harga"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_harga"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_below="@id/tv_selesai"-->
+<!--            tools:text="Harga"/>-->
+
 
         <ImageView
             android:id="@+id/iv_edit"
