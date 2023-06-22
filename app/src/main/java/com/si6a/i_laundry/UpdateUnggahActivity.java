@@ -27,30 +27,39 @@ public class UpdateUnggahActivity extends AppCompatActivity {
         unggah = getIntent().getParcelableExtra("EXTRA_DATA");
         String id = unggah.getId();
 
-        binding.etContent.setText(unggah.getNama());
+        binding.etName.setText(unggah.getNama());
+        binding.etPhone.setText(unggah.getNomor_hp());
+        binding.etBarang.setText(unggah.getJenis_barang());
+        binding.etJumlah.setText(unggah.getJumlah_barang());
+        binding.etHarga.setText(unggah.getHarga());
         binding.btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String content = binding.etContent.getText().toString();
+                String nama = binding.etName.getText().toString();
+                String nomor_hp = binding.etPhone.getText().toString();
+                String jenis_barang = binding.etBarang.getText().toString();
+                String jumlah_barang = binding.etJumlah.getText().toString();
+                String harga = binding.etHarga.getText().toString();
+
 
                 boolean bolehUpdate = true;
 
-                if (TextUtils.isEmpty(content)) {
+                if (TextUtils.isEmpty(nama)) {
                     bolehUpdate = false;
-                    binding.etContent.setError("Konten tidak boleh kosong");
+                    binding.etName.setError("Konten tidak boleh kosong");
                 }
 
                 if (bolehUpdate) {
-                    updateUnggah(id, content);
+                    updateUnggah(nama, nomor_hp, jenis_barang, jumlah_barang, harga, id);
                 }
             }
         });
     }
 
-    private void updateUnggah(String id, String content) {
+    private void updateUnggah(String nama, String nomor_hp, String jenis_barang, String jumlah_barang, String harga, String Id) {
         binding.progressBar.setVisibility(View.VISIBLE);
         APIService api = Utilities.getRetrofit().create(APIService.class);
-        Call<ValueNoData> call = api.updateUnggah(id, content);
+        Call<ValueNoData> call = api.updateUnggah(nama, nomor_hp, jenis_barang, jumlah_barang, harga, Id);
         call.enqueue(new Callback<ValueNoData>() {
             @Override
             public void onResponse(Call<ValueNoData> call, Response<ValueNoData> response) {

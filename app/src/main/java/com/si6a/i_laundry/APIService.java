@@ -36,8 +36,12 @@ public interface APIService {
 
     @FormUrlEncoded
     @PUT("post")
-    Call<ValueNoData> updateUnggah(@Field("id") String id,
-                                   @Field("content") String content);
+    Call<ValueNoData> updateUnggah(@Field("nama") String nama,
+                                   @Field("nomor_hp") String nomor_hp,
+                                   @Field("jenis_barang") String jenis_barang,
+                                   @Field("jumlah_barang") String jumlah_barang,
+                                   @Field("harga") String harga,
+                                   @Field("user_id") String userId);
 
     @DELETE("post/{id}")
     Call<ValueNoData> deleteUnggah(@Path("id") String id);

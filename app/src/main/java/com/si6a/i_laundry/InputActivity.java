@@ -42,16 +42,16 @@ public class InputActivity extends AppCompatActivity {
 
                 if (bolehUnggah) {
                     String userId = Utilities.getValue(InputActivity.this, "xUserId");
-                    addUnggah("649307a7c958e54b25abfb2a", nama, nomor_hp, jenis_barang, jumlah_barang, harga);
+                    addUnggah(nama, nomor_hp, jenis_barang, jumlah_barang, harga, userId);
                 }
             }
         });
     }
 
-    private void addUnggah(String userId, String nama, String nomor_hp, String jenis_barang, String jumlah_barang, String harga) {
+    private void addUnggah(String nama, String nomor_hp, String jenis_barang, String jumlah_barang, String harga, String userId) {
         binding.progressBar.setVisibility(View.VISIBLE);
         APIService api = Utilities.getRetrofit().create(APIService.class);
-        Call<ValueNoData> call = api.addUnggah(userId, nama, nomor_hp, jenis_barang, jumlah_barang, harga);
+        Call<ValueNoData> call = api.addUnggah(nama, nomor_hp, jenis_barang, jumlah_barang, harga, userId);
         call.enqueue(new Callback<ValueNoData>() {
             @Override
             public void onResponse(Call<ValueNoData> call, Response<ValueNoData> response) {
