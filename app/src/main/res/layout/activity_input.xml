@@ -79,70 +79,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-<!--            <com.google.android.material.textfield.TextInputLayout-->
-<!--                android:id="@+id/til_berat"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="16dp"-->
-<!--                android:layout_marginBottom="16dp"-->
-<!--                android:layout_below="@+id/til_jumlah">-->
-
-<!--                <EditText-->
-<!--                    android:id="@+id/et_berat"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Berat Barang" />-->
-
-<!--            </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--            <com.google.android.material.textfield.TextInputLayout-->
-<!--                android:id="@+id/til_keterangan"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="16dp"-->
-<!--                android:layout_marginBottom="16dp"-->
-<!--                android:layout_below="@+id/til_berat">-->
-
-<!--                <EditText-->
-<!--                    android:id="@+id/et_keterangan"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Keterangan" />-->
-
-<!--            </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--            <com.google.android.material.textfield.TextInputLayout-->
-<!--                android:id="@+id/til_masuk"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="16dp"-->
-<!--                android:layout_marginBottom="16dp"-->
-<!--                android:layout_below="@+id/til_keterangan">-->
-
-<!--                <EditText-->
-<!--                    android:id="@+id/et_masuk"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Tanggal Masuk" />-->
-
-<!--            </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--            <com.google.android.material.textfield.TextInputLayout-->
-<!--                android:id="@+id/til_selesai"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="16dp"-->
-<!--                android:layout_marginBottom="16dp"-->
-<!--                android:layout_below="@+id/til_masuk">-->
-
-<!--                <EditText-->
-<!--                    android:id="@+id/et_selesai"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Tanggal Selesai" />-->
-
-<!--            </com.google.android.material.textfield.TextInputLayout>-->
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_harga"
                 android:layout_width="match_parent"
@@ -159,21 +95,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-<!--            <com.google.android.material.textfield.TextInputLayout-->
-<!--                android:id="@+id/til_bayar"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="16dp"-->
-<!--                android:layout_marginBottom="16dp"-->
-<!--                android:layout_below="@+id/til_harga">-->
-
-<!--                <EditText-->
-<!--                    android:id="@+id/et_bayar"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Pembayaran" />-->
-
-<!--            </com.google.android.material.textfield.TextInputLayout>-->
 
             <Button
                 android:id="@+id/btn_add"
