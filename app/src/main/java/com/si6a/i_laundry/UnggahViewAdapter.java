@@ -1,5 +1,6 @@
 package com.si6a.i_laundry;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,15 @@ public class UnggahViewAdapter extends RecyclerView.Adapter<UnggahViewAdapter.Vi
             public boolean onLongClick(View v) {
                 onItemLongClickListener.onItemLongClick(v, unggah, pos);
                 return false;
+            }
+        });
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), DetailUnggahActivity.class);
+                intent.putExtra("EXTRA_DATA", unggah);
+                v.getContext().startActivity(intent);
             }
         });
     }

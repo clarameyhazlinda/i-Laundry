@@ -41,7 +41,7 @@ public interface APIService {
                                    @Field("jenis_barang") String jenis_barang,
                                    @Field("jumlah_barang") String jumlah_barang,
                                    @Field("harga") String harga,
-                                   @Field("user_id") String userId);
+                                   @Field("id") String id);
 
     @DELETE("post/{id}")
     Call<ValueNoData> deleteUnggah(@Path("id") String id);

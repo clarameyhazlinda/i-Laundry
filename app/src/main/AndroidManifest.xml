@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".DetailUnggahActivity"
+            android:exported="false" />
+        <activity
             android:name=".UpdateUnggahActivity"
             android:exported="false" />
         <activity
