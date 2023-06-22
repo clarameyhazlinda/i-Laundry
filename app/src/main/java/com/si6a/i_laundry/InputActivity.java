@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
-
-import com.si6a.i_laundry.databinding.ActivityAddUnggahBinding;
 import com.si6a.i_laundry.databinding.ActivityInputBinding;
 
 import retrofit2.Call;
